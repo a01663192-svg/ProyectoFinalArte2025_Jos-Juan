@@ -1,0 +1,8 @@
+import pandas as pd
+
+dataFile = pd.read_csv("figuras.csv")
+
+areas = []
+perimetros = []
+for index, row in dataFile.interrows():
+	print(f"Fila {index}: FIGURA={row["FIGURA"]}, Medida1={row["MEDIDIA1"]}, Medida2={row["MEDIDA2"]}")
